@@ -1,0 +1,23 @@
+#Instructions for data scraping
+
+#1. Go to https://www.basketball-reference.com/playoffs/NBA_2023.html
+#2. Locate <div class="table_container is_setup" id="div_all_playoffs"></div>
+#3  Inside of this div locate the "<tbody>" tag
+#4  Inside of the "<tbody>" tag locate the "<span>" tag with a class of "tooltip opener open"
+#5  Inside of the "<span>" tag locate the "<strong>" tag and copy the contents of the tag
+#6  The contents of the "<strong>" tag will be the name of the series
+#7  Below this tag there will be another <td> tag 
+#8  Inside of this tag there will be 2 <a> tags
+#9  The first <a> tag will be the link to the home team
+#10 The second <a> tag will be the link to the away team
+#11 Copy the of both <a> tags store this value as the SeriesID
+#12  Inside of the parent "<tbody>" tag locate the "<tr>" tag with a class of "toggleable open"
+#13  Inside of the "<tr>" tag locate the "<table>" tag 
+#14  Inside of the "<table>" tag locate the "<tbody>" tag
+#15 Inside of the "<tbody>" tag locate the "<td>" 
+#16 Inside of the "<td>" tag locate the "<a>" tag
+#17 Inside of the "<a>" tag locate the "href" attribute
+#18 The "href" attribute will be the link to the box score for the game
+#19 Go to the link in the href the link will look something like this "https://www.basketball-reference.com/boxscores/202306010DEN.html"
+#20 Locate the <div> tag where class="sortable stats_table now_sortable"
+#21 Copy the contents of this table element and store it in a csv file using the SeriesID as the name of the file
