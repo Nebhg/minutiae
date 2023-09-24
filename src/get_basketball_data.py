@@ -22,7 +22,6 @@ def fetch_box_score():
     print(hrefs)
     for href_link in list(hrefs):
         boxscore_link = f"https://www.basketball-reference.com{href_link}"
-        boxscore_link = "https://www.basketball-reference.com/boxscores/202304160DEN.html"
         print(boxscore_link)
         response = requests.get(boxscore_link)
         soup = BeautifulSoup(response.content, 'html.parser')
