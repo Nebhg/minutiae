@@ -1,9 +1,9 @@
 ## Context
-im scraping basketball data from a website and saving it to a csv file
+@nba
 
 ## Instructions
 
-You need to fix the python code to split the data being scraped into full game stats, q1 stats, q2 stats, half 1 stats, q3 stats, q4 stats, and half 2 stats and export it to csv for each category, refactor the rest of the code to reflect this change
+
 
 ## Your role 
 
