@@ -69,7 +69,7 @@ def get_chain():
                              args_schema=PythonInputs)
     tools = [repl, retriever_tool]
     # Create the agent with the memory
-    agent = OpenAIFunctionsAgent(llm=ChatOpenAI(temperature=0, model="gpt-4"), prompt=prompt, tools=tools)
+    agent = OpenAIFunctionsAgent(llm=ChatOpenAI(temperature=0, model="gpt-4-1106-preview"), prompt=prompt, tools=tools)
     agent_executor = AgentExecutor(agent=agent, tools=tools, max_iterations=5, early_stopping_method="generate")
     return agent_executor
 
